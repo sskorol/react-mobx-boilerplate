@@ -1,0 +1,77 @@
+@import "./_variables.global.scss";
+
+.button {
+  &:disabled {
+    @mixin global-disabled;
+  }
+
+  &.primary {
+    $button-bg_color: $color-brand;
+    $button-hover_color: color($button-bg_color lightness(-12%));
+    $button-text_color: $color-white;
+    $button-icon_color:  $color-white;
+
+    background-color: $button-bg_color;
+    color: $button-text_color;
+
+    &:enabled:hover {
+      background-color: $button-hover_color;
+    }
+  }
+
+  &.secondary {
+    $button-bg_color: $color-gray-050;
+    $button-hover_color: color($button-bg_color lightness(-12%));
+    $button-text_color: $color-gray-800;
+    $button-icon_color: $color-gray-800;
+
+    background-color: $button-bg_color;
+    color: $button-text_color;
+
+    &:enabled:hover {
+      background-color: $button-hover_color;
+    }
+  }
+
+  &.success {
+    $button-bg_color: $color-success;
+    $button-hover_color: color($button-bg_color lightness(-12%));
+    $button-text_color: $color-white;
+    $button-icon_color: $color-white;
+
+    background-color: $button-bg_color;
+    color: $button-text_color;
+
+    &:enabled:hover {
+      background-color: $button-hover_color;
+    }
+  }
+
+  &.danger {
+    $button-bg_color: $color-danger;
+    $button-hover_color: color($button-bg_color lightness(-12%));
+    $button-text_color: $color-white;
+    $button-icon_color: $color-white;
+
+    background-color: $button-bg_color;
+    color: $button-text_color;
+
+    &:enabled:hover {
+      background-color: $button-hover_color;
+    }
+  }
+
+  &.transparent {
+    $button-bg_color: rgba(255, 255, 255, 0);
+    $button-hover_color: color($button-bg_color lightness(-12%));
+    $button-text_color: $color-gray-800;
+    $button-icon_color: $color-gray-800;
+
+    background-color: $button-bg_color;
+    color: $button-text_color;
+
+    &:enabled:hover {
+      background-color: $button-hover_color;
+    }
+  }
+}

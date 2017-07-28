@@ -1,0 +1,104 @@
+@import '../../styles/UI/variables.global.scss';
+
+.button {
+  border: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: inherit;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:enabled:active {
+    box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.35) !important;
+    outline: none;
+  }
+
+  &.medium {
+    $button-height: $global-component_height_medium;
+    $button-radius: $global-component_radius_medium;
+    $button-font_size:  16px;
+    $button-font_weight:  bold;
+    $button-inner_spaces: 8px;
+    $button-side_spaces:  $global-base_size_medium;
+    $button-shadow_height:  2px;
+    $button-max_width:  240px;
+
+    height: $button-height;
+    border-radius: $button-radius;
+    font-size: $button-font_size;
+    font-weight: bold;
+    padding: 0 $button-side_spaces;
+    max-width: $button-max_width;
+
+    .text {
+      margin-left: $button-inner_spaces;
+      margin-right: $button-inner_spaces;
+    }
+
+    &.primary {
+      box-shadow: inset 0 -$button-shadow_height 0 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &.secondary {
+      box-shadow: inset 0 -$button-shadow_height 0 0 rgba(0, 0, 0, 0.12);
+    }
+
+    &.success {
+      box-shadow: inset 0 -$button-shadow_height 0 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &.danger {
+      box-shadow: inset 0 -$button-shadow_height 0 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &.transparent {
+      box-shadow: inset 0 -$button-shadow_height 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+  &.small {
+    $button-height: $global-component_height_small;
+    $button-radius: $global-component_radius_small;
+    $button-font_size:  14px;
+    $button-font_weight:  bold;
+    $button-inner_spaces: 8px;
+    $button-side_spaces:  $global-base_size_small;
+    $button-shadow_height:  1px;
+    $button-max_width:  160px;
+
+    height: $button-height;
+    border-radius: $button-radius;
+    font-size: $button-font_size;
+    font-weight: bold;
+    padding: 0 $button-side_spaces;
+    max-width: $button-max_width;
+
+    .text {
+      margin-left: $button-inner_spaces;
+      margin-right: $button-inner_spaces;
+    }
+
+    &.primary {
+      box-shadow: 0 $button-shadow_height 0 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &.secondary {
+      box-shadow: 0 $button-shadow_height 0 0 rgba(0, 0, 0, 0.12);
+    }
+
+    &.success {
+      box-shadow: 0 $button-shadow_height 0 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &.danger {
+      box-shadow: 0 $button-shadow_height 0 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &.transparent {
+      box-shadow: 0 $button-shadow_height 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+}

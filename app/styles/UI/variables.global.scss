@@ -1,0 +1,21 @@
+$global-component_height_medium: 32px;
+$global-component_radius_medium: 3px;
+$global-base_size_medium: 12px;
+
+$global-component_height_small: 24px;
+$global-component_radius_small: 2px;
+$global-base_size_small: 8px;
+
+$global-line-height-compact: 1.1;
+$global-line-height-loose: 1.5;
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+// * {
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-text-stroke: 0.05px;
+//   text-rendering: optimizeLegibility;
+// }
