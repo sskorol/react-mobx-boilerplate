@@ -80,7 +80,7 @@ export default merge(baseConfig, {
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(NODE_ENV),
-      'process.env.PORT': JSON.stringify(PORT),
+      'process.env.PORT': JSON.stringify(PORT)
     }),
     // turn debug mode on.
     new webpack.LoaderOptionsPlugin({
