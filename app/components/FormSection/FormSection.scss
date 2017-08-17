@@ -1,0 +1,14 @@
+@import '../../styles/UI/variables.global.scss';
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    margin-bottom: $global-base_size_medium;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

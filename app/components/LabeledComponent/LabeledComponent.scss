@@ -1,0 +1,22 @@
+@import '../../styles/UI/variables.global.scss';
+
+.labeledComponent {
+  $labeled_component-inner_space-medium: $global-component_group-inner_space-medium;
+  $labeled_component-inner_space-small: $global-component_group-inner_space-small;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &.medium {
+    label {
+      margin-bottom: $labeled_component-inner_space-medium;
+    }
+  }
+
+  &.small {
+    label {
+      margin-bottom: $labeled_component-inner_space-small;
+    }
+  }
+}

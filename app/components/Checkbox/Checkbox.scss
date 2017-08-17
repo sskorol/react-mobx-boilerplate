@@ -1,0 +1,68 @@
+@import '../../styles/UI/variables.global.scss';
+
+.checkboxWrapper {
+  & input[type=checkbox] {
+    visibility: hidden;
+  }
+
+  & input[type=checkbox]:checked + label {
+    background: orange;
+  }
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: relative;
+
+  &.medium {
+    $checkbox-wrapper_size: 24px;
+
+    width: $checkbox-wrapper_size;
+    height: $checkbox-wrapper_size;
+
+    & label {
+      $checkbox-size: 20px;
+      $checkbox-radius: $global-component_radius_medium;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      cursor: pointer;
+      background: #eee;
+      width: $checkbox-size;
+      height: $checkbox-size;
+      border-radius: $checkbox-radius;
+    }
+  }
+
+  &.small {
+    $checkbox-wrapper_size: 20px;
+
+    width: $checkbox-wrapper_size;
+    height: $checkbox-wrapper_size;
+
+    & label {
+      $checkbox-size: 16px;
+      $checkbox-radius: $global-component_radius_small;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      cursor: pointer;
+      background: #eee;
+      width: $checkbox-size;
+      height: $checkbox-size;
+      border-radius: $checkbox-radius;
+    }
+  }
+}

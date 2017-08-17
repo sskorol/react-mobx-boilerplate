@@ -1,0 +1,15 @@
+@import '../../styles/UI/variables.global.scss';
+
+.formRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & > * {
+    margin-right: $global-component_group-inner_space-medium;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../../../styles/UI/variables.global.scss';
+
+.dropDownContainer {
+  display: inline-block;
+}
+
+.monthDropDown {
+  $datePicker-pad-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  $datePicker-pad-padding: 4px;
+  $datePicker-pad-radius: $global-component_radius_medium;
+
+  box-shadow: $datePicker-pad-shadow;
+  padding: $datePicker-pad-padding;
+  border-radius: $datePicker-pad-radius;
+  position: absolute;
+  width: 120px;
+  top: calc($global-component_height_medium + 10);
+  z-index: 1;
+  cursor: default;
+
+  .monthOption {
+    display: block;
+    margin: calc($global-component_group-inner_space-medium / 2) 0;
+    padding: $global-component_group-inner_space-medium $global-base_size_medium;
+    font-size: $global-text_font_size-medium;
+    line-height: $global-line-height-compact;
+    font-weight: $global-font_weight-bold;
+  }
+}

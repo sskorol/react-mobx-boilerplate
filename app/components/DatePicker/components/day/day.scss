@@ -1,0 +1,13 @@
+@import '../../../../styles/UI/variables.global.scss';
+
+.reactDatepickerDay {
+  $datePicker-day-size: $global-component_height_medium;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: $datePicker-day-size;
+  height: $datePicker-day-size;
+  margin: calc($global-component_group-inner_space-medium / 2);
+}

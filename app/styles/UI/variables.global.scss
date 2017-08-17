@@ -1,21 +1,54 @@
+// $global-component_height_medium: 48px;
+// $global-component_radius_medium: 4px;
+// $global-base_size_medium: 16px;
+// $global-icon_size_medium: 32px;
+// $global-component_group-inner_space-medium: 6px;
+// $global-component_group-outer_space-medium: 32px;
+// $global-text_font_size-medium: 24px;
+// $global-hint_font_size-medium: 21px;
+
+// $global-component_height_small: 32px;
+// $global-component_radius_small: 3px;
+// $global-base_size_small: 12px;
+// $global-icon_size_small: 30px;
+// $global-component_group-inner_space-small: 3px;
+// $global-component_group-outer_space-small: 16px;
+// $global-text_font_size-small: 21px;
+// $global-hint_font_size-small: 16px;
+
+// $global-line-height-compact: 1;
+// $global-line-height-loose: 1.5;
+
 $global-component_height_medium: 32px;
 $global-component_radius_medium: 3px;
 $global-base_size_medium: 12px;
+$global-icon_size_medium: 24px;
+$global-component_group-inner_space-medium: 4px;
+$global-component_group-outer_space-medium: 24px;
+$global-text_font_size-medium: 16px;
+$global-hint_font_size-medium: 14px;
 
 $global-component_height_small: 24px;
 $global-component_radius_small: 2px;
 $global-base_size_small: 8px;
+$global-icon_size_small: 20px;
+$global-component_group-inner_space-small: 2px;
+$global-component_group-outer_space-small: 12px;
+$global-text_font_size-small: 14px;
+$global-hint_font_size-small: 12px;
 
-$global-line-height-compact: 1.1;
+$global-line-height-compact: 1;
 $global-line-height-loose: 1.5;
 
+$global-font_family: 'Open Sans', Arial, Helvetica, sans-serif;
+$global-font_weight-regular: 400;
+$global-font_weight-bold: 600;
+$global-pad-shadow: 0 0 8 0 rgba(0, 0, 0, 0.35);
+
 body {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: $global-font_family;
 }
 
-// * {
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   -webkit-text-stroke: 0.05px;
-//   text-rendering: optimizeLegibility;
-// }
+* {
+  -webkit-font-smoothing: antialiased;
+}

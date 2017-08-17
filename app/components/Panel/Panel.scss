@@ -1,0 +1,11 @@
+@import '../../styles/UI/variables.global.scss';
+
+.panel {
+  $panel-pad-shadow: $global-pad-shadow;
+
+  width: 320px;
+  border-radius: calc($global-component_radius_medium * 2);
+  padding: calc($global-base_size_medium * 2);
+  margin: calc($global-base_size_medium * 2);
+  box-shadow: $panel-pad-shadow;
+}

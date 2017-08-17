@@ -1,0 +1,41 @@
+$color-gray-000:  #faf7f9;
+$color-gray-050:  #f7f2f5;
+$color-gray-100:  #f2edf0;
+$color-gray-150:  #ede8eb;
+$color-gray-200:  #e8e1e5;
+$color-gray-250:  #e0d7dc;
+$color-gray-300:  #d6cbd1;
+$color-gray-350:  #ccc0c6;
+$color-gray-400:  #c2b6bc;
+$color-gray-450:  #b3a6ac;
+$color-gray-500:  #a3969d;
+$color-gray-550:  #94878d;
+$color-gray-600:  #877a80;
+$color-gray-650:  #7a6d74;
+$color-gray-700:  #706369;
+$color-gray-750:  #66595f;
+$color-gray-800:  #594d53;
+$color-gray-850:  #4d4046;
+$color-gray-900:  #42353c;
+$color-gray-950:  #2e2127;
+$color-white: #fff;
+$color-black: #111;
+$color-brand: #42a5f5;
+$color-danger:  #d33128;
+$color-success: #008f01;
+$color-warning: #ffa01c;
+$color-transparent: rgb(0, 0, 0, 0);
+$text-font_color: $color-white;
+$hint-font_color: $color-gray-400;
+$label-font_color: $color-gray-300;
+$global-pad-bg_color: $color-gray-750;
+$global-element-bg_color: $color-gray-900;
+$global-bg_color: $color-gray-800;
+
+@define-mixin global-disabled {
+  opacity: 0.5;
+}
+
+@define-extend global-bg_color {
+  background-color: $color-gray-800;
+}

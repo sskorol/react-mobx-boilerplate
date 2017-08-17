@@ -1,0 +1,58 @@
+@import '../../../../styles/UI/variables.global.scss';
+
+.datepicker {
+  $datePicker-pad-shadow: $global-pad-shadow;
+  $datePicker-pad-padding: calc($global-component_group-inner_space-medium * 2);
+  $datePicker-pad-radius: $global-component_radius_medium;
+
+  box-shadow: $datePicker-pad-shadow;
+  padding: $datePicker-pad-padding;
+  border-radius: $datePicker-pad-radius;
+  display: inline-block;
+  position: relative;
+
+  .divider {
+    margin: $global-component_group-inner_space-medium 0;
+  }
+
+  .monthContainer {
+    .header {
+      display: flex;
+      flex-direction: column;
+
+      .navigationBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .dayNames {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .weekDayName {
+          $datePicker-weekday-size: $global-component_height_medium;
+          $datePicker-weekday-font_size: $global-hint_font_size-small;
+          $datePicker-weekday-font_weight: normal;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: $datePicker-weekday-size;
+          height: $global-component_height_small;
+          line-height: $global-line-height-compact;
+          font-size: $datePicker-weekday-font_size;
+          font-weight: $datePicker-weekday-font_weight;
+          margin: calc($global-component_group-inner_space-medium / 2);
+        }
+      }
+    }
+  }
+
+  .todayButtonContainer {
+    display: flex;
+    justify-content: center;
+  }
+}

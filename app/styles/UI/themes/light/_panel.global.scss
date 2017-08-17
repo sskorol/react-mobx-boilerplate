@@ -1,0 +1,7 @@
+@import './_variables.global.scss';
+
+.panel {
+  $panel-bg_color: $global-pad-bg_color;
+
+  background-color: $panel-bg_color;
+}

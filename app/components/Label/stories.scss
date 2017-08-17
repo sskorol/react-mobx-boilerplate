@@ -1,0 +1,12 @@
+.labels {
+  display: flex;
+  flex-direction: column;
+
+  .labelsRow {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-between;
+    margin: 10px;
+  }
+}

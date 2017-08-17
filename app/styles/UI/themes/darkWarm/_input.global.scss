@@ -1,0 +1,7 @@
+@import "./_variables.global.scss";
+
+.input {
+  border-color: $color-transparent;
+  background-color: $global-element-bg_color;
+  color: $text-font_color;
+}

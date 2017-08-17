@@ -1,0 +1,42 @@
+@import "./_variables.global.scss";
+
+.infoButton {
+  &:disabled {
+    @mixin global-disabled;
+  }
+
+  border-style: solid;
+
+  &.default {
+    $info_button-bg_color: $color-transparent;
+    $info_button-border_color: $color-gray-200;
+    $info_button-text_color: $color-gray-800;
+
+    background-color: $info_button-bg_color;
+    border-color: $info_button-border_color;
+    color: $info_button-text_color;
+
+    &:enabled:hover {
+      background-color: $color-transparent;
+      border-color: $color-gray-300;
+      color: $color-gray-800;
+    }
+  }
+
+  &.danger {
+    $info_button-bg_color: $color-danger;
+    $info_button-border_color: $color-transparent;
+    $info_button-text_color: $color-white;
+
+    border: none;
+    background-color: $info_button-bg_color;
+    border-color: $info_button-border_color;
+    color: $info_button-text_color;
+
+    &:enabled:hover {
+      background-color: color($info_button-bg_color shade(12%));
+      border-color: $color-transparent;
+      color: $color-white;
+    }
+  }
+}

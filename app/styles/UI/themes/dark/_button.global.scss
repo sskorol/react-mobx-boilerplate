@@ -1,0 +1,111 @@
+@import "./_variables.global.scss";
+
+.button {
+  &:disabled {
+    @mixin global-disabled;
+  }
+
+  border-style: none;
+
+  &.primary {
+    $button-bg_color: $color-brand;
+    $button-border_color: $color-transparent;
+    $button-text_color: $color-white;
+
+    background-color: $button-bg_color;
+    border-color: $button-border_color;
+    color: $button-text_color;
+
+    &:enabled:hover {
+      background-color: color($button-bg_color shade(12%));
+      border-color: $color-transparent;
+      $button-text_color: $color-white;
+    }
+  }
+
+  &.secondary {
+    $button-bg_color: $color-gray-650;
+    $button-border_color: $color-transparent;
+    $button-text_color: $color-white;
+
+    background-color: $button-bg_color;
+    border-color: $button-border_color;
+    color: $button-text_color;
+
+    &:enabled:hover {
+      background-color: color($button-bg_color shade(8%));
+      border-color: $color-transparent;
+      $button-text_color: $color-white;
+    }
+  }
+
+  &.success {
+    $button-bg_color: $color-success;
+    $button-border_color: $color-transparent;
+    $button-text_color: $color-white;
+
+    background-color: $button-bg_color;
+    border-color: $button-border_color;
+    color: $button-text_color;
+
+    &:enabled:hover {
+      background-color: color($button-bg_color shade(12%));
+      border-color: $color-transparent;
+      $button-text_color: $color-white;
+    }
+  }
+
+  &.danger {
+    $button-bg_color: $color-danger;
+    $button-border_color: $color-transparent;
+    $button-text_color: $color-white;
+
+    background-color: $button-bg_color;
+    border-color: $button-border_color;
+    color: $button-text_color;
+
+    &:enabled:hover {
+      background-color: color($button-bg_color shade(12%));
+      border-color: $color-transparent;
+      $button-text_color: $color-white;
+    }
+  }
+
+  &.transparent {
+    $button-bg_color: $color-transparent;
+    $button-border_color: $color-transparent;
+    $button-text_color: $color-white;
+
+    background-color: $button-bg_color;
+    border-color: $button-border_color;
+    color: $button-text_color;
+
+    &:enabled:hover {
+      background-color: $color-gray-650;
+      border-color: $color-transparent;
+      $button-text_color: $color-white;
+    }
+  }
+
+  &.ghost {
+    $button-bg_color: $color-transparent;
+    $button-border_color: $color-gray-600;
+    $button-text_color: $color-white;
+
+    background-color: $button-bg_color;
+    border-color: $button-border_color;
+    color: $button-text_color;
+    border-style: solid;
+
+    &:enabled:hover {
+      background-color: $color-transparent;
+      border-color: $color-gray-450;
+      $button-text_color: $color-white;
+    }
+  }
+
+  .counterWrapper {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+}

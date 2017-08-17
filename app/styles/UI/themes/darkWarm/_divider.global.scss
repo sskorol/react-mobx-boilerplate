@@ -1,0 +1,8 @@
+@import './_variables.global.scss';
+
+.divider {
+  $divider-color: $color-gray-600;
+
+  border-left-color: $divider-color;
+  border-bottom-color: $divider-color;
+}

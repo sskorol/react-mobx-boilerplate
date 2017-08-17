@@ -31,7 +31,13 @@ module.exports = {
       },
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        use: ['url-loader']
+        use: {
+          loader: 'svg-sprite-loader',
+          options: {
+            limit: 10000,
+            mimetype: 'image/svg+xml'
+          }
+        }
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/,

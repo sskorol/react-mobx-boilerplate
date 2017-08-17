@@ -1,0 +1,15 @@
+.datePickerWrapper {
+  display: inline-block;
+}
+
+.datePickerPopper {
+  z-index: 1;
+
+  &[data-placement^="bottom"] {
+    margin-top: 2px;
+  }
+
+  &[data-placement^="top"] {
+    margin-bottom: -2px;
+  }
+}

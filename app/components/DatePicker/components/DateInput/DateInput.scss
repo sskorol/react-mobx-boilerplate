@@ -1,0 +1,41 @@
+@import '../../../../styles/UI/variables.global.scss';
+
+.pickerInputContainer {
+  $datePickerInput-heigth: $global-component_height_medium;
+  $datePickerInput-radius: $global-component_radius_medium;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc($global-text_font_size-medium * 8.5);
+  height: $datePickerInput-heigth;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  border-radius: $datePickerInput-radius;
+
+  .datePickerInput {
+    $datePickerInput-outer_space: calc($global-component_group-outer_space-medium / 4);
+    $datePickerInput-font_size: $global-text_font_size-medium;
+    $datePickerInput-line_height: $global-line-height-compact;
+
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 $datePickerInput-outer_space;
+    line-height: $datePickerInput-line_height;
+    font-size: $datePickerInput-font_size;
+    border: none;
+  }
+
+  .iconContainer {
+    $datePickerInput-outer_space: calc($global-component_group-outer_space-medium / 4);
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: $datePickerInput-outer_space;
+    position: absolute;
+    right: 0;
+  }
+}

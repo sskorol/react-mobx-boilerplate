@@ -1,0 +1,39 @@
+@import '../../styles/UI/variables.global.scss';
+
+.input {
+  &.medium {
+    $input-height: $global-component_height_medium;
+    $input-radius: $global-component_radius_medium;
+    $input-font_size: $global-text_font_size-medium;
+    $input-outer_space: calc($global-component_group-outer_space-medium / 4);
+    $input-line_height: $global-line-height-compact;
+
+    height: $input-height;
+    border-radius: $input-radius;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    font-size: $input-font_size;
+    padding: 0 $input-outer_space;
+    line-height: $input-line_height;
+    width: 100%;
+  }
+
+  &.small {
+    $input_height: $global-component_height_small;
+    $input_radius: $global-component_radius_small;
+    $input-font_size: $global-text_font_size-small;
+    $input-outer_space: calc($global-component_group-outer_space-small / 2);
+    $input-line_height: $global-line-height-compact;
+
+    height: $input_height;
+    border-radius: $input_radius;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    font-size: $input-font_size;
+    padding: 0 $input-outer_space;
+    line-height: $input-line_height;
+    width: 100%;
+  }
+}

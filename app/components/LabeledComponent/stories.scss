@@ -1,0 +1,12 @@
+.textFields {
+  display: flex;
+  flex-direction: column;
+
+  .textFieldRow {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+    margin: 10px;
+  }
+}

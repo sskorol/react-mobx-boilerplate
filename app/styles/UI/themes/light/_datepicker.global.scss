@@ -1,0 +1,139 @@
+@import './_variables.global.scss';
+
+.pickerInputContainer {
+  border-color: $color-gray-300;
+  background-color: $global-element-bg_color;
+
+  .datePickerInput {
+    color: $text-font_color;
+    background-color: $color-transparent;
+  }
+
+  .iconContainer {
+    color: $color-gray-400;
+
+    &:hover {
+      color: $color-gray-500;
+    }
+  }
+}
+
+.datePicker {
+  $datePicker-bg_color: $global-pad-bg_color;
+
+  background-color: $datePicker-bg_color;
+
+  .datePickerDropDown {
+    background-color: $global-element-bg_color;
+
+    .yearOptionUpcoming,
+    .yearOptionPrevious {
+      color: $color-gray-400;
+
+      &:hover {
+        color: $color-gray-800;
+      }
+    }
+
+    .datePickerDropDownOption {
+      color: $text-font_color;
+
+      &:hover {
+        background-color: $color-gray-050;
+      }
+
+      &.selectedDatePickerDropDownOption {
+        background-color: color($color-brand a(25%));
+
+        &:hover {
+          background-color: color($color-brand a(25%));
+        }
+      }
+    }
+  }
+
+  .weekDayName {
+    $datePicker-week_day_name-text_color: $color-gray-400;
+
+    color: $datePicker-week_day_name-text_color;
+  }
+
+  .reactDatepickerDay--today {
+    border: 1px solid color($color-brand a(75%));
+
+    &:enabled:hover {
+      border: 1px solid color($color-brand a(75%));
+    }
+  }
+
+  .reactDatepickerDay--selected {
+    $button-bg_color: $color-brand;
+    $button-border_color: $color-transparent;
+    $button-text_color: $color-white;
+
+    background-color: $button-bg_color;
+    border-color: $button-border_color;
+    color: $button-text_color;
+    box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.35) !important;
+
+    &:enabled:hover {
+      background-color: color($button-bg_color shade(12%));
+      border-color: $color-transparent;
+      $button-text_color: $color-white;
+
+      box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .reactDatepickerDay--in-selecting-range,
+  .reactDatepickerDay--in-range {
+    background-color: color($color-brand a(25%));
+
+    &:enabled:hover {
+      background-color: color($color-brand a(50%));
+    }
+  }
+
+  .reactDatepickerDay--in-selecting-range:not(.reactDatepickerDay--in-range) {
+    background-color: rgba($color-brand, 0.5);
+  }
+
+  .reactDatepickerDay--in-range:not(.reactDatepickerDay--in-selecting-range) {
+    .react-datepicker__month--selecting-range & {
+      background-color: $color-gray-200;
+    }
+  }
+
+  .reactDatepickerDay--highlighted {
+    background-color: color($color-brand a(15%));
+
+    &:enabled:hover {
+      background-color: color($color-brand a(25%));
+    }
+
+    // CUSTOM HIGHLIGHT RANGES
+    // &-custom-1 {
+    //   color: magenta;
+    // }
+
+    // &-custom-2 {
+    //   color: green;
+    // }
+  }
+
+  .reactDatepickerDay--outside-month {
+    color: $color-gray-300;
+  }
+
+  .reactDatepickerDay--keyboard-selected {
+    outline-color: #4d90fe;
+    outline-offset: -2px;
+    outline-style: auto;
+    outline-width: 5px;
+  }
+
+  .reactDatepickerDay--disabled {
+    background-color: $color-gray-200;
+  }
+}
+
